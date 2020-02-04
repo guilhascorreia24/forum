@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="despription" content="Informações sobre o curso, material de apoio, eventos, cursos, ofertas de trabalho, e porque não memes? O nosso objectivo é que o primeiro site do Curso de Engenharia Informática da Universidade do Algarve não ">
+  <meta name="Author" content="Estudantes de LEI">
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="N1I3NZbUgou4AWD6wdJG_dzIkC9hMIBWGjCswrl_t2A" />
+
+
+  <title>NEEI - {% block title %}{% endblock title %}</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for all pages -->
+  <link href="css/neei.css" rel="stylesheet">
+
+  <!-- Custom styles for current page  -->
+  <link href="css/coming-soon.css" rel="stylesheet">
+
+  <!-- Fav icon -->
+  <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/V0dWEXF.png"/>
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/f0cbcbf10f.js" crossorigin="anonymous"></script>
+
+  <!-- If more css/js scripts are needed -->
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="home"><img src="img/neei_nobg_color.png" alt='' style="height:50px;"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-hands-helping"></i>
+                    O teu Núcleo
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                    <a href="composition" class="dropdown-item" >Composição</a>
+                    <a href="strategy" class="dropdown-item" >Estratégia</a>
+                    <a href="about"  class="dropdown-item" >Sobre o website</a>
+                    <a class="dropdown-item" href="#">Quero fazer parte</a>
+                    <a class="dropdown-item" href="#">Parcerias</a>
+                </div>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-comments"></i>
+                A tua opinião
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="nav-link text-secondary" data-toggle="modal" data-target="#sorry_not_finished" href="">
+                    <i class="fas fa-lightbulb"></i> Sugerir ideias
+                </a>
+                <a class="nav-link text-secondary" data-toggle="modal" data-target="#sorry_not_finished" href="">
+                    <i class="fas fa-info"></i> Solicitar apoio
+                </a>
+
+            </div>
+          </li>
+          <li class="nav-item">
+              <a href="event"class="nav-link">
+                  <i class="fas fa-calendar-alt"></i>
+                  Eventos
+              </a>
+          </li>
+          <li class="nav-item">
+              <a href="event"class="nav-link">
+                 <i class="fas fa-project-diagram"></i>
+                  Projectos
+              </a>
+          </li>
+          <li class="nav-item">
+              <a href="#"class="nav-link">
+                 <i class="fas fa-photo-video"></i>
+                  Galeria
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="memes-list">
+                <i class="fas fa-grin-squint-tears"></i>
+                  Extra
+              </a>
+          </li>
+        <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-user"></i>
+                  {{ user.username }}
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                <a class="dropdown-item" href="#">Perfil</a>
+                <a class="dropdown-item" href="logout">Terminar sessão</a>
+              </div>
+            </li>
+            <a class="nav-link" href="/login/?next=/"> <!--TODO-->
+                <i class="fas fa-user"></i>
+                login
+            </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Messeges -->
+    <!--<div class="alert alert-{{ message.tags }} alert-dismissible fade show mb-0" role="alert">
+        falta linha de guia 
+      {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>-->
+
+    <header>
+        
+
+    </header>
+  <!-- Page Content -->
+  <br>
+  <br>
+        <h1 style="margin-left:10%">Galeria</h1>
+  <div class="row" style="margin-right:10%;margin-left:10%;margin-bottom: 10%;">
+            <div class="col-md-4" style="margin-bottom:2.5%">
+              <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(121).jpg"
+                data-size="1600x1067">
+                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(121).jpg"
+                  class="img-fluid">
+              </a>
+              <h3 class=" ">Photo title</h3>
+              <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.</p>
+              <div class="date"> 7 September 2016</div>
+            </div>
+      
+            <figure class="col-md-4" style="margin-bottom:2.5%">
+              <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(96).jpg"
+                data-size="1600x1067">
+                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(96).jpg"
+                  class="img-fluid" /></a>
+                <h3 class=" ">Photo title</h3>
+              <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.</p>
+              <div class="date"> 7 September 2016</div>
+            </figure>
+      
+            <figure class="col-md-4" style="margin-bottom:2.5%">
+              <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(104).jpg"
+                data-size="1600x1067">
+                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(104).jpg"
+                  class="img-fluid" />
+              </a>
+              <h3 class=" ">Photo title</h3>
+              <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.</p>
+              <div class="date"> 7 September 2016</div>
+            </figure>
+      
+            <figure class="col-md-4" style="margin-bottom:2.5%">
+              <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(45).jpg"
+                data-size="1600x1067">
+                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg"
+                  class="img-fluid" />
+              </a>
+              <h3 class=" ">Photo title</h3>
+              <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.</p>
+              <div class="date"> 7 September 2016</div>
+            </figure>
+      
+            <figure class="col-md-4" style="margin-bottom:2.5%">
+              <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(122).jpg"
+                data-size="1600x1067">
+                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(122).jpg"
+                  class="img-fluid" />
+              </a>
+              <h3 class=" ">Photo title</h3>
+              <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.</p>
+              <div class="date"> 7 September 2016</div>
+            </figure>
+      
+            <figure class="col-md-4" style="margin-bottom:2.5%">
+              <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg"
+                data-size="1600x1067">
+                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg"
+                  class="img-fluid" />
+              </a>
+              <h3 class=" ">Photo title</h3>
+              <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.</p>
+              <div class="date"> 7 September 2016</div>
+            </figure>
+      
+            <figure class="col-md-4" style="margin-bottom:2.5%">
+              <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(125).jpg"
+                data-size="1600x1067">
+                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(125).jpg"
+                  class="img-fluid" />
+              </a>
+              <h3 class=" ">Photo title</h3>
+              <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.</p>
+              <div class="date"> 7 September 2016</div>
+            </figure>
+      
+            <figure class="col-md-4" style="margin-bottom:2.5%">
+              <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg"
+                data-size="1600x1067">
+                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg"
+                  class="img-fluid" />
+              </a>
+              <h3 class=" ">Photo title</h3>
+              <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.</p>
+              <div class="date"> 7 September 2016</div>
+            </figure>
+      
+            <figure class="col-md-4" style="margin-bottom:2.5%">
+              <a class="black-text" href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(119).jpg"
+                data-size="1600x1067">
+                <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(119).jpg"
+                  class="img-fluid" />
+              </a>
+              <h3 class=" ">Photo title</h3>
+              <p>Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat.</p>
+              <div class="date"> 7 September 2016</div>
+            </figure>
+      
+      </div>
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Lista C - Estudantes de Engenharia Informática da Universidade do Algarve </p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Modal - feature em construçao -->
+<div class="modal fade" id="sorry_not_finished" tabindex="-1" role="dialog" aria-labelledby="sorry_not_finished_Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sorry_not_finished_Title">Ups</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <i class="fas fa-frown fa-4x d-flex justify-content-center text-gray-9 mb-2"></i>
+          <p>Pedimos desculpa mas ainda não implementamos esta feature.</p>
+          <a class="link" href="#">Ajuda-nos a concluir este projecto</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
